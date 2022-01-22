@@ -1,6 +1,11 @@
+import { Wrapper, Background, InputContainer, ButtonContainer } from "./styled";
+import background from '../../assets/images/background-login.jpg';
+
 const SignIn = () => {
     return(
-        <h1>SignIn</h1>
+        <Wrapper>
+            <Background image={background} />
+        </Wrapper>
     );
 }
 
