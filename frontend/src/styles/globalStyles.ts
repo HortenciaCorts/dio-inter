@@ -23,18 +23,18 @@ const GlobalStyle = createGlobalStyle`
             filter: opacity(0.8)
         }
     }
-
-    .primary-color{
-        color: ${({ theme }) => theme.colors.primary};
-    }
-
+    
     h2{
         font-weight: 500;
         font-size: 1.5rem;
         line-height: 28px;
         color: #000000;
     }
-
+    
+    .primary-color{
+        color: ${({ theme }) => theme.colors.primary};
+    }
+    
     .wallet{
         font-weight: 500;
         color: ${({ theme }) => theme.colors.primary};
