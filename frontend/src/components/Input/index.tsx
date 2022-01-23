@@ -1,5 +1,5 @@
 import { InputHTMLAttributes } from 'react'
-import { InputContainer } from "../../pages/SignIn/styled";
+import { InputContainer } from "./styled";
 
 const Input = (props: InputHTMLAttributes<HTMLInputElement>) => {
     return(
