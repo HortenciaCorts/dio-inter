@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 export const CardContainer = styled.div<{width: string; height: string; noShadow: boolean;}>`
     width: ${(props) => props.width};
     height: ${(props) => props.height};
+    color: ${({theme}) => theme.colors.primary};
     background: ${({theme}) => theme.colors.background};
 
     ${(props) => !props.noShadow && css`
@@ -17,4 +18,7 @@ export const CardContainer = styled.div<{width: string; height: string; noShadow
     flex-direction: column;
 
     z-index: 99;
+    & > p.primary-color{
+        color: ;
+    }
 `;
