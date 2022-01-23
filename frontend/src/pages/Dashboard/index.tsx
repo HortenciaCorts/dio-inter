@@ -2,6 +2,7 @@ import Button from "../../components/Button";
 import Card from "../../components/Card";
 import Header from "../../components/Header";
 import Input from "../../components/Input";
+import Statement from "./Statement";
 import { BodyContainer, DashboardBackground, InlineContainer, InlineTitle } from "./styles";
 
 const Dashboard = () => {
@@ -49,6 +50,7 @@ const Dashboard = () => {
                         <InlineTitle>
                             <h2 className="h2">Estrato da conta</h2>
                         </InlineTitle>
+                        <Statement />
                     </Card>
                 </div>
             </BodyContainer>
