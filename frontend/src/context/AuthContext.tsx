@@ -1,4 +1,3 @@
-import { AxiosResponse } from "axios";
 import { createContext, useState } from "react";
 import { me, signIn, SignInData, signUp, SignUpData } from "../services/resources/user";
 
