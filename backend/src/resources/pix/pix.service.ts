@@ -68,7 +68,7 @@ export default class PixService {
 
        await pixRepository.save(pixTransaction)
 
-       return {mag: 'Pagamento efetudo com sucesso'}
+       return {msg: 'Pagamento efetudo com sucesso'}
    }
 
    async transactions(user: Partial<User>) {
@@ -82,7 +82,7 @@ export default class PixService {
     const received = pixReceived.map(transaction => ({
         value: transaction.value, 
         user: {
-            firstname: transaction.payingUser.firstName,
+            firstName: transaction.payingUser.firstName,
             lastName: transaction.payingUser.lastName,
         },
         updateAt: transaction.updateAt,
@@ -92,7 +92,7 @@ export default class PixService {
     const paying = pixPaying.map(transaction => ({
         value: transaction.value, 
         user: {
-            firstname: transaction.requestingUser.firstName,
+            firstName: transaction.requestingUser.firstName,
             lastName: transaction.requestingUser.lastName,
         },
         updateAt: transaction.updateAt,
