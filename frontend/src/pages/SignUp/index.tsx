@@ -29,7 +29,7 @@ const SignUp = () => {
                 </InputContainer>
                 <ButtonContainer>
                     <Button type="button" onClick={handleToSignUp}>Entrar</Button>
-                    <p>Já tem uma conta? <Link to="/">Entre já</Link></p>
+                    <p>Já tem uma conta? <Link to="/signin">Entre já</Link></p>
                 </ButtonContainer>
             </Card>
         </Wrapper>
